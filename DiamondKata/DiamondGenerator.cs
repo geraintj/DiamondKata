@@ -4,7 +4,7 @@ namespace DiamondKata;
 
 public class DiamondGenerator
 {
-        const string Alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const string Alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
     public StringCollection PrintDiamond(char input)
     {
