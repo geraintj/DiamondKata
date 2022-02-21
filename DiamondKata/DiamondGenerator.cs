@@ -8,7 +8,6 @@ public class DiamondGenerator
 
     public StringCollection PrintDiamond(char input)
     {
-
         var diamondLines = new StringCollection();
         var inputIndex = Alphabet.IndexOf(Char.ToUpper(input));
 
