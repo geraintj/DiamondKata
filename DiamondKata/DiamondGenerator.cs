@@ -17,19 +17,20 @@ public class DiamondGenerator
         }
 
         var step = 1;
-        var diaondLineIndex = 0;
-        var letterIndex = 0;
-        while (diaondLineIndex < 2 * (inputIndex + 1) - 1)
+        var diamondLineIndex = 0;
+        var lineLetterIndex = 0;
+        var totalNumberOfLines = 2 * (inputIndex + 1) - 1;
+        while (diamondLineIndex < totalNumberOfLines)
         {
-            if (diaondLineIndex == inputIndex)
+            if (diamondLineIndex == inputIndex)
             {
                 step = -1;
             }
 
-            diamondLines.Add(new string(BuildLine(inputIndex, letterIndex)));
+            diamondLines.Add(new string(BuildLine(inputIndex, lineLetterIndex)));
 
-            letterIndex += step;
-            diaondLineIndex++;
+            lineLetterIndex += step;
+            diamondLineIndex++;
         }
         return diamondLines;
     }
