@@ -15,6 +15,7 @@ public class DiamondGenerator
         {
             return new StringCollection() {"Input character is invalid - it must be a letter."};
         }
+
         var step = 1;
         var diaondLineIndex = 0;
         var letterIndex = 0;
@@ -30,7 +31,6 @@ public class DiamondGenerator
             letterIndex += step;
             diaondLineIndex++;
         }
-
         return diamondLines;
     }
 
